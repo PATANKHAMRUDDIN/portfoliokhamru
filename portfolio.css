@@ -1,0 +1,160 @@
+/* Define the color palette */
+:root {
+    --primary-color: #2C3531;
+    --secondary-color: #116466;
+    --accent-color: #D9B08C;
+    --light-color: #FFCB9A;
+    --background-color: #D1E8E2;
+    --text-color: #D9B08C; /* New color for paragraphs */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+header.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    height: 80px;
+    flex-direction: row;
+}
+
+.navbar-left img {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 5vmin;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.navbar-right .element {
+    color: var(--light-color);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: larger;
+}
+
+.navbar-right .element:hover {
+    color: var(--accent-color);
+}
+
+section.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+}
+
+.home-left {
+    max-width: 60%;
+}
+
+.home-left h1 {
+    color: var(--accent-color);
+}
+
+.home-left p {
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+.home-right img {
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid var(--accent-color);
+}
+
+section.services {
+    padding: 20px;
+    background-color: var(--background-color);
+}
+
+.services h1 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service p {
+    color: var(--text-color);
+}
+
+footer.contact {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 20px;
+    text-align: center;
+}
+
+footer.contact h2 {
+    color: var(--accent-color);
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactForm label {
+    margin-top: 10px;
+}
+
+#contactForm input, #contactForm textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid var(--light-color);
+    border-radius: 5px;
+    width: 80%;
+}
+
+#contactForm button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: var(--light-color);
+}
+
+#contactForm textarea {
+    height: 100px;
+}
